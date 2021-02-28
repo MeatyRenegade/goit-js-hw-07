@@ -1,7 +1,8 @@
-const categoriesCount = document.querySelectorAll('li.item');
-console.log(`В списке ${categoriesCount.length} категории.`);
+const categoriesCountRef = document.querySelectorAll('li.item');
 
-categoriesCount.forEach(category => {
+console.log(`В списке ${categoriesCountRef.length} категории.`);
+
+categoriesCountRef.forEach(category => {
   const title = category.firstElementChild.textContent;
   const elementCount = category.querySelectorAll('li').length;
   console.log(
