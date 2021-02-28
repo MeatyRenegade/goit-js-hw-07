@@ -15,3 +15,13 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const galleryRef = document.querySelector('#gallery');
+
+const cardTemplate = images.reduce((item, { url, alt }) => {
+  const image = `<img class="gallery__image" src="${url}" alt="${alt}">`;
+  item += `<li class="gallery__item">${image}</li>`;
+  return item;
+}, '');
+
+galleryRef.insertAdjacentHTML('afterbegin', cardTemplate);
