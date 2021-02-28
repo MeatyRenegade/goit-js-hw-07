@@ -12,6 +12,7 @@ h1,
 h2,
 h3,
 p {
+  font-weight: 600;
   margin-top: 0;
   margin-bottom: 4px;
 }
@@ -19,22 +20,62 @@ p {
 img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 body {
   font-family: 'Roboto', 'sans-serif';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   color: #030303;
   margin-right: auto;
   margin-left: auto;
 }
 
+.task__section {
+  margin: 10px 10px 10px 10px;
+  border: outset 5px;
+}
+
+.task__header {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  color: #000000;
+  border-bottom: 1px solid #207419;
+}
+
+#gallery {
+  display: flex;
+  padding: 0;
+}
+
+.gallery__item {
+  list-style: none;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.gallery__image {
+  list-style: none;
+}
+
+#counter {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+#name-input {
+  margin-left: 10px;
+}
+
 #validation-input {
+  margin-bottom: 10px;
+  margin-left: 10px;
   border: 3px solid #bdbdbd;
 }
 
@@ -44,4 +85,19 @@ body {
 
 #validation-input.invalid {
   border-color: #f44336;
+}
+
+#font-size-control {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+#text {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+#controls {
+  margin-bottom: 10px;
+  margin-left: 10px;
 }
