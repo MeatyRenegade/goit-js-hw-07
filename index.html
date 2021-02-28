@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Goit-js-hw-07</title>
     <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.0.0/modern-normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- task-1 -->
     <section class="task__section">
+      <h2 class="task__header">Задание 1</h2>
       <ul id="categories">
         <li class="item">
           <h2>Животные</h2>
@@ -50,16 +55,19 @@
 
     <!-- task-2 -->
     <section class="task__section">
+      <h2 class="task__header">Задание 2</h2>
       <ul id="ingredients"></ul>
     </section>
 
     <!-- task-3 -->
     <section class="task__section">
+      <h2 class="task__header">Задание 3</h2>
       <ul id="gallery"></ul>
     </section>
 
     <!-- task-4 -->
     <section class="task__section">
+      <h2 class="task__header">Задание 4</h2>
       <div id="counter">
         <button type="button" data-action="decrement">-1</button>
         <span id="value">0</span>
@@ -69,12 +77,14 @@
 
     <!-- task-5 -->
     <section class="task__section">
+      <h2 class="task__header">Задание 5</h2>
       <input type="text" placeholder="Ваше имя?" id="name-input" />
       <h1>Привет, <span id="name-output">незнакомец</span>!</h1>
     </section>
 
     <!-- task-6 -->
     <section class="task__section">
+      <h2 class="task__header">Задание 6</h2>
       <input
         type="text"
         id="validation-input"
@@ -85,29 +95,18 @@
 
     <!-- task-7 -->
     <section class="task__section">
+      <h2 class="task__header">Задание 7</h2>
       <input id="font-size-control" type="range" />
       <br />
       <span id="text">Абракадабра!</span>
     </section>
 
-    <!-- task-8 -->
-    <section class="task__section">
-      <div id="controls">
-        <input type="number" min="0" max="100" step="1" />
-        <button type="button" data-action="render">Создать</button>
-        <button type="button" data-action="destroy">Очистить</button>
-      </div>
-
-      <div id="boxes"></div>
-    </section>
-
-    <script src="./js/task-1.js"></script>
-    <!-- <script src="./js/task-2.js"></script> -->
-    <!-- <script src="./js/task-3.js"></script> -->
-    <!-- <script src="./js/task-4.js"></script> -->
-    <!-- <script src="./js/task-5.js"></script> -->
-    <!-- <script src="./js/task-6.js"></script> -->
-    <!-- <script src="./js/task-7.js"></script> -->
-    <!-- <script src="./js/task-8.js"></script> -->
+    <script type="module" src="./js/task-1.js"></script>
+    <script type="module" src="./js/task-2.js"></script>
+    <script type="module" src="./js/task-3.js"></script>
+    <script type="module" src="./js/task-4.js"></script>
+    <script type="module" src="./js/task-5.js"></script>
+    <script type="module" src="./js/task-6.js"></script>
+    <script type="module" src="./js/task-7.js"></script>
   </body>
 </html>
